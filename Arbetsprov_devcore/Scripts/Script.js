@@ -5,6 +5,7 @@
 function openNav() {
     $("#Menu").css("width", 250);
     $(".menu-icon").css("margin-right", 250);
+    $(".overlay").addClass(".overlay-hugeinc");
     $(".overlay").show();
 }
 
@@ -12,6 +13,7 @@ function closeNav() {
     $("#Menu").css("width", 0);
     $(".top").css("width", "100%");
     $(".menu-icon").css("margin-right", 0);
+    $(".overlay-hugeinc").removeClass();
     $(".overlay").hide();
 }
 
