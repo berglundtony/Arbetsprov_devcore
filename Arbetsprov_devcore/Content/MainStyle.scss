@@ -22,7 +22,7 @@ body {
 .content {
     display: inline-block;
 }
-/************* Media queries for sections **************/
+/************* Media queries for sections and image container **************/
 @media (max-width: 575px) {
     .tryouts {
         margin: 20px 0 0 13px;
@@ -36,6 +36,16 @@ body {
         font-weight: $bold-font;
         width: 100%;
         float: left;
+    }
+    .img-container {
+        display: block !important;
+        position: relative !important;
+        margin: 0 0 15px 13px;
+        position: relative;
+        border-radius: 3px;
+        justify-content: center;
+        width: 220px;
+        height: 220px;
     }
 }
 
@@ -52,6 +62,16 @@ body {
         font-weight: $bold-font;
         width: 100%;
         float: left;
+    }
+    .img-container {
+        display: block !important;
+        position: relative !important;
+        margin: 0 0 15px 13px;
+        position: relative;
+        border-radius: 3px;
+        justify-content: center;
+        width: 220px;
+        height: 220px;
     }
 }
 
@@ -73,6 +93,16 @@ body {
     .pictures {
         margin-left: 15px;
     }
+    .img-container {
+        display: block !important;
+        position: relative !important;
+        margin: 0 0 15px 13px;
+        position: relative;
+        border-radius: 3px;
+        justify-content: center;
+        width: 220px;
+        height: 220px;
+    }
 }
 
 @media (min-width: 992px) {
@@ -89,6 +119,16 @@ body {
         width: 100%;
         float: left;
     }
+    .img-container {
+        display: block !important;
+        position: relative !important;
+        margin: 0 0 15px 13px;
+        position: relative;
+        border-radius: 3px;
+        justify-content: center;
+        width: 220px;
+        height: 220px;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -104,6 +144,16 @@ body {
         font-weight: $bold-font;
         width: 100%;
         float: left;
+    }
+    .img-container {
+        display: block !important;
+        position: relative !important;
+        margin: 0 15px 15px 13px;
+        position: relative;
+        border-radius: 3px;
+        justify-content: center;
+        width: 220px;
+        height: 220px;
     }
 }
 /************* The fullscreen overlay **************/
@@ -367,18 +417,7 @@ $menu-icon-color: #363636;
     top: $menu-icon-width / 3.2;
     transform: rotate(-45deg);
 }
-/************** Picture transitions ***************/
-
-.img-container {
-    display: block !important;
-    position: relative !important;
-    margin: 0 0 15px 13px;
-    position: relative;
-    border-radius: 3px;
-    justify-content: center;
-    width: 220px;
-    height: 220px;
-}
+/************** The X over the pictures ***************/
 
 .the-cross {
     position: relative !important;
@@ -415,6 +454,7 @@ $menu-icon-color: #363636;
 .img-container:hover > .the-cross {
     opacity: 0.0;
 }
+/************** Picture transitions ***************/
 
 .image {
     display: block;
